@@ -5,8 +5,10 @@
     --title-color: #C89446;
     --paragraph-color: #6F6F6F;
     --menu-color: #383838;
+    --color-border: #F2F2F2;
     --font-title: 'Pinyon Script', serif;
     --font-body: 'Source Sans Pro', sans-serif;
+    
 }
 
 /* General */
@@ -168,12 +170,18 @@ img{
     color: var(--title-color);
 }
 
-.more:hover{
+.more a:hover{
     text-decoration: underline;
 }
 
-.more::after{
-    content: '>';
+.more a::after{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    margin-left: 0.7em;
+    background: url(img/small_arrow.svg) center center no-repeat;
+
 }
 
 .block-img{
@@ -328,6 +336,66 @@ img{
     background: transparent;
 }
 
+/* RECIPES */
+
+.recipe{
+    padding: 50px 0;
+    background: no-repeat top left  / 80vw auto url(img/news-bg.jpg) ;
+}
+
+.recipe-list{
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.recipe-list strong{
+    color: var(--menu-color);
+    font-weight: 700;
+}
+
+.recipe-date{
+    width: 60px;
+    flex: none;
+    line-height: 1;
+}
+
+.recipe-date strong{
+    font-size: 1.75rem;
+    display: block;
+    line-height: 1.2;
+}
+
+.recipe-list-item{
+    display: flex;
+    border-bottom: solid 1px var(--color-border);
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+.recipe-list-item p{
+    margin: 0;
+}
+
+.recipe-list-item:last-child{
+    border-bottom: 0;
+}
+
+.recipe-list{
+    max-width: 920px;
+    margin-left:auto ;
+}
+
+.recipe .more{
+    display: block;
+    text-align: right;
+    margin-top: 60px;
+}
+
+/* Map */
+.map{
+    width: 100%;
+    height: 460px;
+}
 
 
 /* média quieries */ 
@@ -563,5 +631,38 @@ img{
     width: calc(33.33% - 20px);
 }
 
+/* RECIPES */
 
+.recipe{
+    padding: 60px 0;
+    background-size:589px auto ;
+}
+
+.recipe .title{
+    text-align: right;
+}
+
+.recipe .container > p{
+    text-align: right;
+    max-width: 716px;
+    margin-left: auto;
+}
+
+.recipe-date{
+    width: 95px;
+}
+
+.recipe-list{
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.recipe-list-item{
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.recipe-list-item:last-child{
+    padding-bottom: 0;
+}
 }

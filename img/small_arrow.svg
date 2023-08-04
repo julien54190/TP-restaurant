@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="9px" viewBox="0 0 5 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Restaurant" transform="translate(-1270, -4510)" stroke="#C89446">
+            <g id="Group-3" transform="translate(1158, 4500)">
+                <g id="small-right" transform="translate(112, 10)">
+                    <polyline id="Shape" points="0.5 0.5 4.5 4.5 0.5 8.5"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
