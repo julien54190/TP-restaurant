@@ -397,6 +397,69 @@ img{
     height: 460px;
 }
 
+/* Footer */
+.footer{
+    background: var(--menu-color) bottom right no-repeat;
+    font-weight: 300;
+    color: var(--main-lg-color);
+    padding: 40px 0;
+}
+
+.footer-title{
+    color: var(--title-color);
+    margin-bottom: 1.25em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-column{
+    margin-bottom: 2rem;
+}
+
+.footer-hours ul{
+    list-style: none;
+}
+
+.footer-hours{
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+}
+
+.footer-hours li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.days{
+    text-align: left;
+}
+
+.hours{
+    text-align: center;
+}
+
+.footer-hours li:nth-child(-n+3){
+    margin-right: 0.473rem;
+}
+
+.footer a {
+    text-decoration: underline;
+}
+
+.footer a:hover{
+    color: var(--title-color);
+    font-weight: 700;
+    font-size:1.2rem
+}
+
+.footer-credits{
+    font-size: 0.93rem;
+}
+
+.footer-credits span{
+    font-weight: 700;
+    }
 
 /* média quieries */ 
 
@@ -665,4 +728,31 @@ img{
 .recipe-list-item:last-child{
     padding-bottom: 0;
 }
+
+/* Footer */
+
+.footer{
+    background-image: url(img/splash.png);
 }
+
+.footer-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column{
+    width: 290px;
+    margin-right: 50px;
+}
+
+.footer-column:first-child{
+    width: 450px;
+}
+
+.footer-column:last-child{
+    margin-right: 0;
+    flex: none;
+}
+
+}
+
