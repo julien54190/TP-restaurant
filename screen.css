@@ -343,6 +343,11 @@ img{
     background: no-repeat top left  / 80vw auto url(img/news-bg.jpg) ;
 }
 
+.recipe a:hover {
+    text-decoration: underline;
+
+}
+
 .recipe-list{
     font-weight: 300;
     font-size: 1.125rem;
@@ -459,6 +464,80 @@ img{
 
 .footer-credits span{
     font-weight: 700;
+    }
+
+
+    /*                   PAGE 2                   */
+
+    /* HEADER */
+
+    .header-repice{
+        color: var(--main-lg-color);
+        background: 
+            linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.80) 39.24%, rgba(28, 28 ,28 , 0.60)),
+            url(img/salad-chicken.jpg) center center / cover no-repeat;
+    }
+    /* recipe block */
+
+    .block-ingredients{
+        border: solid 1px var(--title-color);
+        padding: 35px 20px;
+        font-weight: 600;
+        color: var(--menu-color);
+    }
+
+    .block-ingredients ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .block-ingredients li{
+        padding: 5px 0;
+    }
+
+    .block-ingredients span{
+        width: 35px;
+        text-align: right;
+        display: inline-block;
+        margin-right: 20px;
+        font-weight: 300;
+    }
+
+    .section-overflow{
+        padding: 20px 0;
+    }
+
+    .block-video{
+        text-align: center;
+        position: relative;
+        background: var(--menu-color);
+        display: block;
+    }
+
+    .block-video img{
+        box-shadow: 0 0 30px rgba(128, 128, 128, 0.5);
+        opacity: 0.6;
+        transition: opacity .3s;
+    }
+
+    .block-video::after{
+        content: '';
+        background: url(img/play.png) center center no-repeat;
+        position: absolute;
+        width: 62px;
+        height: 62px;
+        top: calc(50% - 31px);
+        left: calc(50% - 31px);
+        transition: transform .3s;
+    }
+
+    .block-video:hover::after{
+        transform: scale(1.2);
+    }
+
+    .block-video:hover img{
+        opacity: .8;
     }
 
 /* média quieries */ 
@@ -753,6 +832,38 @@ img{
     margin-right: 0;
     flex: none;
 }
+
+    /*                   PAGE 2                   */
+
+    /* recipe block */
+
+    .block-ingredients{
+        width: 350px;
+        padding: 35px 40px;
+        flex: none;
+    }
+
+    .block-ingredients span{
+        width: 35px;
+        margin-right: 50px;
+    }
+
+    .block-ingredients li{
+        padding: 10px 0;
+    }
+
+.section-overflow{
+    padding: 0;
+    margin-top: -20px;
+}
+
+.block-video img{
+    display: block;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 }
 
